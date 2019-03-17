@@ -1,19 +1,3 @@
-" vim
-set nocompatible 
-set noro
-set relativenumber 
-set number
-set clipboard=unnamed  " use the clipboards of vim and win
-set tabstop=2 shiftwidth=2 expandtab
-filetype plugin indent on    " required
-syntax on
-set undofile
-set undodir=~/.vim/undo/
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
 " vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'airblade/vim-gitgutter'
@@ -35,6 +19,22 @@ Plug 'Shougo/neosnippet-snippets'
 Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 Plug 'ervandew/supertab'
 call plug#end()
+
+" vim
+set nocompatible 
+set noro
+set relativenumber 
+set number
+set clipboard=unnamed  " use the clipboards of vim and win
+set tabstop=2 shiftwidth=2 expandtab
+filetype plugin indent on    " required
+syntax on
+set undofile
+set undodir=~/.vim/undo/
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " vim-delve
 map <Leader>B :DlvToggleBreakpoint<CR>
