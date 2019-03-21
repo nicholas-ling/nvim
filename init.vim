@@ -1,5 +1,7 @@
 " vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'sebdah/vim-delve'
 Plug 'scrooloose/nerdcommenter'
@@ -38,7 +40,8 @@ nnoremap <C-H> <C-W><C-H>
 
 " vim-delve
 map <Leader>B :DlvToggleBreakpoint<CR>
-map <Leader>D :DlvDebug<CR>
+map <Leader>dd :DlvDebug<CR>
+map <Leader>dt :DlvTest<CR>
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
